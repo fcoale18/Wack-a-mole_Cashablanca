@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cashablanca — Vault Catcher</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="game-header">
+    <h1>Cashablanca: Vault Catcher</h1>
+    <p class="game-description">
+      World banknotes are popping out of the slots! Click each banknote before it disappears to catalog it and earn 1 point. Watch out for fake bills: clicking one deducts 2 points
+    </p>
+  </header>
+
+  <main class="game-container">
+    
+    <section class="scoreboard" aria-label="Game statistics">
+      <div class="stat-box">
+        <span class="stat-label">Notes Cataloged</span>
+        <span id="score" class="stat-value">0</span>
+      </div>
+
+      <div class="stat-box">
+        <span class="stat-label">Vault Timer</span>
+        <span id="time-left" class="stat-value">30</span>
+      </div>
+
+      <div class="stat-box">
+        <span class="stat-label">Best Collection</span>
+        <span id="high-score" class="stat-value">0</span>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Game controls">
+      
+      <button id="start-btn" type="button">Open Vault</button>
+      
+    </section>
+
+    <section class="board" aria-label="Cashablanca vault slots">
+      <div class="slot" data-index="0">
+        <div class="banknote"></div>
+      </div>
+      <div class="slot" data-index="1">
+        <div class="banknote"></div>
+      </div>
+      <div class="slot" data-index="2">
+        <div class="banknote"></div>
+      </div>
+      <div class="slot" data-index="3">
+        <div class="banknote"></div>
+      </div>
+      <div class="slot" data-index="4">
+        <div class="banknote"></div>
+      </div>
+      <div class="slot" data-index="5">
+        <div class="banknote"></div>
+      </div>
+      <div class="slot" data-index="6">
+        <div class="banknote"></div>
+      </div>
+      <div class="slot" data-index="7">
+        <div class="banknote"></div>
+      </div>
+      <div class="slot" data-index="8">
+        <div class="banknote"></div>
+      </div>
+    </section>
+
+    <p id="status-message" class="status-message" aria-live="polite"></p>
+
+  </main>
+
+</body>
+</html>
